@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+    <link rel="icon" href="icon.ico">
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9p/EzXeJ6jvMchMlLQ4Xwc5PQb4cBw/izF7+Z+P7wqLdN8k3jHpy3u5Rd8+Ry0AjlJ5YzXwWQo7Q+8ZL7RcG8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>STOPWATCH</title>
+
+</head>
+<body>
+  <div id="mute-icon" onclick="toggleMute()">
+    <i class="fa fa-volume-up"></i>
+  </div>
+
+	<h1>STOPWATCH</h1>
+<center>
+	<div class="rr">
+	<div id="timer">00:00:00</div>
+</div>
+</center>
+	
+<button id = "start" onclick="startTimer()">START</button>
+<button onclick="stopTimer(),audio.play();">STOP</button>
+<button onclick="resetTimer(),audio.play();">RESET</button>
+<button onclick="saveTime(),audio.play();">SAVE</button>
+
+<br>
+		<time id="datetime"></time>
+    
+	
+
+<center>
+<div  class="btnsaved" id="saved"></div>
+</center>
+<center>
+  
+    <div style="background-color: black; animation-delay: 0ms;" >
+        <br>
+    <h1 style="color: cornsilk; font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">This WebSite Was Designed By : Ahmed ELsaman</h1>
+    
+    <h2 style="color: cornsilk;margin-top: -40; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">You Can Contact Me In : </h2><br>
+    
+  
+</div>
+
+  
+
+</center>
+  
+</div>
+<div class="social">
+  <div class="text2">
+      <div class="text3"> 
+          <a href="https://www.facebook.com/ahmed.elsaman.5099?mibextid=ZbWKwL"  target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Facebook</span>
+  </div> 
+
+  <div class="text2">
+      <div class="text3"> 
+          <a href="https://www.youtube.com/channel/UC1_6896L0ur6KUGWcE_ucDQ" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <span  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">YouTube</span>
+  </div>
+
+  <div class="text2">
+      <div class="text3"> 
+          <a href="https://instagram.com/a7med_3lsaman?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <span  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Instagram</span>
+  </div>
+
+  <div class="text2">
+      <div class="text3"> 
+          <a href="https://wa.me/qr/PQKNYIJANYQKJ1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">WhatsApp</span>
+  </div>
+  
+</div>
+
+</div>
+<footer style="background-color: black; margin-top: -30px; margin-bottom: -30px;">
+  <br><br>
+  <p style="font-size: 10px; color: cornsilk; margin-top: -5px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">&copy; 2023 Ahmed EL-Saman. All Rights Reserved.</p>
+  <br>
+</footer>
+	<script src="script.js"></script>
+</body>
+</html>

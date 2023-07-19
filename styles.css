@@ -1,0 +1,351 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+@keyframes animate {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
+  
+  .element {
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+body.scroll {
+    background-color: #f2f2f2;
+    transition: background-color 0.5s ease-in-out;
+  }
+@font-face{
+    font-family: santa;
+    src: url("Santa\ Festival\ TTF\ Personal.ttf") format('truetype');
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-family:"santa" ;
+    font-size: 70px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#timer {
+    font-family: "digital", sans-serif;
+    font-size: 100px;
+    font-weight: 50px;
+    color: #be2626;
+    
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+   
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    background-color: #1e1263;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+#saved-timers {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.saved-timer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.saved-timer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
+@font-face {
+    font-family: digital;
+    src: url("digital-7\ \(italic\).ttf") format('truetype');
+}
+
+#mute-icon {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+#mute-icon:hover {
+    background-color: #ff3e54;
+    color: #fff;
+}
+
+#datetime {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ff3e54;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: pulse 1s ease-in-out infinite;
+    color: #fff;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+    #timer {
+        font-size: 80px;
+        padding: 10px;
+    }
+    button {
+        font-size: 20px;
+    }
+    .saved-timer {
+        font-size: 20px;
+        padding: 10px;
+        width: 150px;
+    }
+}
+    .btnsaved {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 24px;
+  color: #1b1442;
+}
+
+.btnsaved div {
+	font-family: "digital";
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #888888;
+}
+
+
+ @font-face {
+    font-family: digital;
+    src: url("digital-7\ \(italic\).ttf") format('truetype');
+  }
+
+  .social {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: -40px;
+  padding: 20px;
+  opacity: 1; 
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text2 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #ffff;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 1; 
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.text2:hover {
+
+  width: 200px;
+}
+
+.text3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+overflow: hidden;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+ 
+  transition: all 0.3s ease-out;
+}
+
+.text2:hover .text3 {
+  opacity: 1; 
+}
+
+.text2:nth-child(1):hover .text3{
+  opacity: 1; 
+  background: #4065b1;
+}
+
+.text2:nth-child(2):hover .text3{
+  opacity: 1; 
+  background: #f60002;
+}
+
+.text2:nth-child(3):hover .text3{
+  opacity: 1; 
+  background: #fb3c7c;
+}
+
+.text2:nth-child(4):hover .text3{
+  opacity: 1; 
+  background: #1cea49;
+}
+span{
+  opacity: 0;
+}
+
+.text3 a {
+  color: #000;
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.text2:hover .text3 a {
+  color: white;
+}
+
+.text2 span {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  color: #fff;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.text2:hover span {
+  opacity: 1;
+  transform: translateX(-60px);
+}
+
+
+.text2:nth-child(1) span{
+ 
+  color: #4065b1;
+}
+
+.text2:nth-child(2) span{
+   
+  color: #f60002;
+}
+
+.text2:nth-child(3) span{
+   
+  color: #ec31e3;
+}
+
+.text2:nth-child(4) span{
+ 
+  color: #1cea49;
+}
+
+@keyframes popin {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.element{
+  animation: popin 0.7s ease-out;
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-5px, 0); }
+  50% { transform: translate(0, 0); }
+  75% { transform: translate(5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.title {
+  animation: shake 0.7s;
+}
