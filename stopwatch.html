@@ -24,12 +24,14 @@
 	<div id="timer">00:00:00</div>
 </div>
 </center>
-	
+	<center>
+        <div style="justify-content: center;">
 <button id = "start" onclick="startTimer()">START</button>
-<button onclick="stopTimer(),audio.play();">STOP</button>
-<button onclick="resetTimer(),audio.play();">RESET</button>
-<button onclick="saveTime(),audio.play();">SAVE</button>
-
+<button id="stop" onclick="stopTimer(),audio.play();">STOP</button>
+<button id="save" onclick="saveTime(),audio.play();">SAVE</button>
+<button id ="reset" onclick="resetTimer(),audio.play();">RESET</button>
+</div>
+</center>
 <br>
 		<time id="datetime"></time>
     
