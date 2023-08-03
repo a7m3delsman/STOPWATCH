@@ -79,7 +79,7 @@ button {
 button:hover {
     padding-right: 30px;
     padding-left: 30px;
-    margin: 10px;
+
     background-color: #333;
     color: #fff;
 }
@@ -146,7 +146,7 @@ button:hover {
     color: #fff;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -301,8 +301,16 @@ span{
   opacity: 1;
   transform: translateX(-60px);
 }
-
-
+#stop{
+  display: none;
+  
+}
+#reset{
+  display: none;
+}
+#save{
+  display: none;
+}
 .text2:nth-child(1) span{
  
   color: #4065b1;
@@ -315,7 +323,7 @@ span{
 
 .text2:nth-child(3) span{
    
-  color: #ec31e3;
+  color: #fb3c7c;
 }
 
 .text2:nth-child(4) span{
