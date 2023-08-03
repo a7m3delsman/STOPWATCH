@@ -6,6 +6,11 @@ let hours = 0;
 let savedTimes = [];
 
 function startTimer() {
+  hideButton("start");
+  nohideButton("stop");
+nohideButton ("save");
+
+nohideButton("reset")
   let startTime = new Date().getTime() - (seconds * 1000) - (minutes * 60 * 1000) - (hours * 60 * 60 * 1000);
   interval = setInterval(function() {
     let currentTime = new Date().getTime();
@@ -25,11 +30,16 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(interval);
-
+hideButton("stop");
+nohideButton("start");
   document.getElementById('start').disabled = false;
 }
 
 function resetTimer() {
+  hideButton ("reset");
+  hideButton ("stop");
+  hideButton ("save");
+  nohideButton ("start");
   clearInterval(interval);
   milliseconds = 0;
   seconds = 0;
@@ -119,3 +129,16 @@ window.addEventListener("scroll", function() {
       element.classList.remove('animate');
     }
   });
+  function hideButton(buttonId) {
+    var button = document.getElementById(buttonId);
+    if (button) {
+      button.style.display = "none";
+    }
+  }
+  function nohideButton(buttonId) {
+    var button = document.getElementById(buttonId);
+    if (button) {
+      button.style.display = "block";
+    }
+  }
+  
